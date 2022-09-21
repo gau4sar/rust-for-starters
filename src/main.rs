@@ -19,4 +19,21 @@ fn main() {
 
     let isBoolean = true || false;
     println!("isBoolean: {}", isBoolean);
+
+    //Compound types
+
+    // Arrays
+    let arr: [u8;3] = [1,2,3];
+
+    //print structure of the array
+    println!("arr: {:?}", arr);
+
+    //Tuples
+    println!("{}", is_even(4));
+    
+}
+
+pub fn is_even(num: u8) -> bool {
+    let digit = num % 2;
+    digit == 0
 }
